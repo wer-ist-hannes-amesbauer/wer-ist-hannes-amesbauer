@@ -1,0 +1,7 @@
+*.md
+workspaceStorage/
+globalStorage/
+*.log
+*.tmp
+History/
+SIKs/

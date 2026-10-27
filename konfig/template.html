@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  $for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+  $endfor$
+  $for(date-meta)$
+  <meta name="date" content="$date-meta$" />
+  $endfor$
+    $for(include-in-head)$
+  $include-in-head$
+  $endfor$
+  $if(css)$
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+  $endif$
+  $if(mathjax-url)$
+  <script src="$mathjax-url$" type="text/javascript"></script>
+  $endif$
+  <!-- Benutzerdefiniertes CSS für Abstände -->
+
+</head>
+<body>
+  $if(title)$
+  <header>
+    <h1>$title$</h1>
+    $if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+    $endif$
+  </header>
+  $endif$
+  <main>
+    $body$
+  </main>
+</body>
+</html>
